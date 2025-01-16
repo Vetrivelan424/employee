@@ -121,6 +121,13 @@ ul {
   transition: all 500ms ease
 }
 
+.login-error {
+  float: left;
+  color: red !important;
+  font-size: 14px;
+  transition: color 1s ease;
+}
+
 .aside-toggle {
   width: 180px !important;
   transition: all 500ms ease

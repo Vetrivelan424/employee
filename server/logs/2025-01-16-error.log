@@ -1,3 +1,6 @@
 2025-01-16 11:03:50 [error]: Error server occurred: SyntaxError: Unexpected string in JSON at position 165
 2025-01-16 11:04:51 [error]: Error occurred: TypeError: Cannot read properties of undefined (reading 'name')
 2025-01-16 11:05:02 [error]: Error occurred: TypeError: Cannot read properties of undefined (reading 'name')
+2025-01-16 14:26:40 [error]: Error occurred: Error: update `employees` set `name` = 'Acme2', `age` = 25, `department` = '1', `position` = 'Develpoer', `contact_email` = 'rwerw@gmail.com', `phone_number` = '1343423423', `country` = '\"Marketing\"', `state` = NULL, `city` = NULL, `status` = 1, `updated_at` = '2025-01-16 08:56:40' where `uuid` = '910f5372-f408-4ee0-a2bb-778c6475d0d0' - ER_BAD_FIELD_ERROR: Unknown column 'country' in 'field list'
+2025-01-16 14:36:34 [error]: Error occurred: TypeError: Cannot read properties of undefined (reading 'length')
+2025-01-16 14:37:41 [error]: Error occurred: TypeError: Cannot read properties of undefined (reading 'length')

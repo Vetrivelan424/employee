@@ -10,9 +10,9 @@ const UnAuthRoute = ({ children }) => {
   // }
 
   if (localStorage.getItem('user_access_token')) {
-    return <Navigate to="/customers" />;
+    return <Navigate to="/employee" />;
   }else{
-    return <Navigate to="/customers" />;
+    return <Navigate to="/employee" />;
   }
   // if ( localStorage.getItem('user_access_token')) {
   //   return <Navigate to="/login" />;

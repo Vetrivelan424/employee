@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomerForm from '../CustomersModule/CustomerForm'
+import CustomerForm from '../EmployeeModule/CustomerForm'
 import { useNavigate,useLocation } from 'react-router-dom'
 export default function CreateUser() {
     const navigate = useNavigate()

@@ -22,12 +22,7 @@ const UserLayout = (props) => {
   const currentPath = location.pathname;
   const lastPath = currentPath.split('/').pop();
   // Example of how to use these values in an API request header
-  const headers = {
-    osName: osInfo.name,
-    osVersion: osInfo.version,
-    browserName: browserInfo.name,
-    browserVersion: browserInfo.version,
-  };
+  
   
   useEffect(()=>{
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -122,7 +117,7 @@ const UserLayout = (props) => {
 
 
   <li className='fade-in-right data-100'>
-    <NavLink to="/customers" data-for="menu-user" data-tip={`${show? '' :'Employees'}`}  className={({ isActive }) => `menu-item-container d-flex align-items-center menu-item-container-toggle ${isActive ? 'dash-active' : ''}`} >
+    <NavLink to="/employee" data-for="menu-user" data-tip={`${show? '' :'Employees'}`}  className={({ isActive }) => `menu-item-container d-flex align-items-center menu-item-container-toggle ${isActive ? 'dash-active' : ''}`} >
       <span className={`menu-item-i icon-customer`} ></span>  <span className={`${show? 'text-show typewriter ' :'text-hide'}`}>Employees</span>
     </NavLink>
   </li>

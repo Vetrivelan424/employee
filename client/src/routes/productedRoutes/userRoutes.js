@@ -14,8 +14,8 @@ const userRoutes = [
     ),
     children: [
       { path: '/', element: <ProductedClientList /> },
-      { path: '/customers', element: <ProductedClientList /> },
-      { path: '/customers/add-customer', element: <ProductedCreateCustomer /> },
+      { path: '/employee', element: <ProductedClientList /> },
+      { path: '/employee/add-customer', element: <ProductedCreateCustomer /> },
     
       {
         path: '/settings',

@@ -8,7 +8,7 @@ const SaveRequestMiddleware = async (req, res, next) => {
 
     try {
         // Define paths to ignore
-        const ignorePaths = ['/', '/authentiocation_log_list'];
+        const ignorePaths = ['/', '/api_log_list','/track_log_list'];
   
         if (!ignorePaths.includes(apiEndpoint)) {
             // Wrap `res.send` to include tracking logic

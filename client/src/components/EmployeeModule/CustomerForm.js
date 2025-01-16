@@ -263,21 +263,7 @@ function CustomerForm(props) {
         (value) => !value.trim() && "Phone Number is required",
         (value) => value.trim().length < 5 && "Phone Number must be at least 5 characters"
       ],
-      address_1: [
-        (value) => !value.trim() && "Address is required"
-      ],
-      state: [
-        (value) => !value && "State is required"
-      ],
-      city: [
-        (value) => !value.trim() && "City is required"
-      ],
-      zip: [
-        (value) => !value.trim() && "ZIP code is required"
-      ],
-      designation: [
-        (value) => !value.trim() && "Designation is required"
-      ]
+   
       // Add more fields as needed
     };
 
@@ -348,7 +334,7 @@ function CustomerForm(props) {
       if (response.data.valid == true) {
         showToast('success', response.data.message, 'top-center')
           setTimeout(() => {
-            history('/customers')
+            history('/employee')
           }, 2000);
         
       } else {
@@ -373,7 +359,7 @@ function CustomerForm(props) {
       setFormData(Datas)
 
         setTimeout(() => {
-          history('/customers')
+          history('/employee')
         }, 2000);
       
     } else {
@@ -387,9 +373,7 @@ function CustomerForm(props) {
     setDepartmentValue(value)
     setFormData({
       ...formData,
-      country: JSON.stringify(value),
-      state: null,
-      city: null
+      department:value
     })
   };
 
@@ -409,7 +393,7 @@ function CustomerForm(props) {
       {loader ? <Loader /> :
         <>
           {page == 'add_customer' && <div className='d-flex mt-4'>
-            <div className='back-button cursor-pointer' onClick={() => history('/customers')}>
+            <div className='back-button cursor-pointer' onClick={() => history('/employee')}>
               <i className='icon-left'></i>
             </div>
             <div className='back-btn-content'>
@@ -590,7 +574,7 @@ function CustomerForm(props) {
 
             {page == 'add_customer' &&
               <>
-                <div onClick={() => history('/customers')} className='back-project-btn align-center cursor-pointer' >
+                <div onClick={() => history('/employee')} className='back-project-btn align-center cursor-pointer' >
                   <span className='px-4'>Cancel </span>
                 </div>
                 {!isLoding ?

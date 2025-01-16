@@ -80,7 +80,7 @@ export default function ClientList() {
           <div className='d-flex'>
             <ReactTooltip id="menu-user" className="reacttooltip" type="dark" effect="solid" place="bottom" delayShow={parseInt("100")} resizeHide={Boolean(false)} />
 
-            <i data-for="menu-user" data-tip={'Edit'} onClick={() => navigate('/customers/add-customer?emp_id=' + row.uuid)} className='icon-edit mx-3 cursor-pointer icon-hover'></i>
+            <i data-for="menu-user" data-tip={'Edit'} onClick={() => navigate('/employee/add-customer?emp_id=' + row.uuid)} className='icon-edit mx-3 cursor-pointer icon-hover'></i>
             <i data-for="menu-user" data-tip={'Delete'} onClick={() => handleDeleteClick(row)} className='icon-delete mx-1 cursor-pointer icon-hover'></i>
           </div>
         </>
@@ -124,7 +124,7 @@ export default function ClientList() {
           </p>
         </div>
         <div className=''>
-          <button className='add-customer-btn add-user-btn p-3' onClick={() => navigate('/customers/add-customer')}>
+          <button className='add-customer-btn add-user-btn p-3' onClick={() => navigate('/employee/add-customer')}>
             <i className='text-21 icon-add-Customer me-4'></i> <span>Add Employee</span>
           </button>
         </div>
