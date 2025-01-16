@@ -1,0 +1,205 @@
+/* Container Animations */
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Text Animations */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 1s steps(30)  alternate;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.text-blur-in {
+  animation: textBlurIn 1s ease;
+}
+
+@keyframes textBlurIn {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+  }
+  100% {
+    text-shadow: none;
+    opacity: 1;
+  }
+}
+
+/* Icon Animations */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Image Animations */
+.zoom-in-img {
+  animation: zoomInImg 1s ease;
+}
+
+@keyframes zoomInImg {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.slide-in-right-img {
+  animation: slideInRightImg 1s ease;
+}
+
+@keyframes slideInRightImg {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* User-Attractive Methods */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hover-rotate {
+  transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+  transform: rotate(10deg);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.slide-down {
+  animation: slideDown 0.5s ease-out;
+  /* Optional: to ensure the element is hidden before animation starts */
+  transform: translateY(-100%);
+  opacity: 0;
+  animation-fill-mode: forwards; /* Ensure the element stays in the final position */
+}
+
+/* Add more animations and user-attractive methods as needed */
+

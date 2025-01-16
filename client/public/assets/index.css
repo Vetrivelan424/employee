@@ -1,0 +1,140 @@
+/* ********************************************************************* */
+/*----------------------------- FONTS USED ---------------------------------- */
+/* ********************************************************************* */
+
+
+@font-face {
+  font-family: helvetica;
+  src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url('./fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ********************************************************************* */
+/* -----------------------COMMON UTILITIES------------------------- */
+/* ********************************************************************* */
+
+:root {
+  --blue-light: #4488ff;
+  --blue-bg: #f2f5ff;
+  --blue-dark: #3774df;
+  --blue-header: #e0ebff;
+  --purple-light: #e5e5fe;
+  --dark-color: #000000;
+  --dark-light: #3e3e3e;
+  --grey-cor-light: #efefef;
+  --grey-color: #767676;
+  --admin-btn-grey:#747373;
+  --grey-dark: #5e5e5e;
+  --bg-light: white;
+  --grey-light: #d1d1d1;
+  --grey-lighter: #f8f8f8;
+  --cls-green: #67a571;
+  --cls-bg-green: #e9f9de;
+  --ext-red: #ff8a64;
+  --ext-bg-purple: #fae0ff;
+  --ext-purple: #a34cb1;
+  --ext-bg-red: #ffeed6;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --bolder: 800;
+  --bg-body: #f1f2f7;
+  --status-draft: #ff7231;
+  --status-trained: #86bd3e;
+  --status-under-training: #4d65d9;
+  --positive-color: #19ab27;
+  --negative-color: #ff0000;
+  --negative-dark-color: #d80000;
+  --training-error: #a58863;
+  --negative-light: #ffe9e9;
+  --normal-letter-spacing: 0px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'helvetica' !important;
+  font-weight: var(--heavy);
+  background-color: var(--bg-light);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'helvetica';
+  line-height: 0;
+}
+
+ol,
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style-type: none;
+}
+
+/* Login Module */
+.login-wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none !important;
+}
+.login-letf {
+  background-image: url('../assets/Images/backgruonds/login-left-bg-wt.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  
+}
+.left-header-text{
+  font-size: 65px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+}
+.left-bottom-box{
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
+}
+.login-right-logo{
+  margin-top: 64px;
+  width: 274px;
+  height: 57px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
